@@ -31,6 +31,18 @@ public class GeShou {
             scoreArray[i]=score;
         }
 
+        //去掉第一个和最后一个求和
+        int sum=0;
+        //做一个循环，把第一个和最后一个去掉，从第二个开始，倒数第二个结束如下：
+        for (int i = 1; i < count - 1; i++) {
+            sum = sum + scoreArray[i];
+        }
+
+        // 取得平均值,计算去掉最大值和最小值后的平均值
+        int result=sum/(count-2);
+        System.out.println("平均值是："+result);
+
+
         //对用户输入的数据进行排序，使用冒泡算法，虽然性能低，但是考的基本点很多
         //外循环表示把从第一个数开始，所有的数都要跟后面的数比较一遍
         for (int i=0;i<count-1;i++){
@@ -46,5 +58,6 @@ public class GeShou {
         }
         //4.测试下输入分数，打印数组（注意：数组不能直接打印，要遍历或者使用工具类Arrays）
         System.out.println(Arrays.toString(scoreArray));
+
     }
 }
