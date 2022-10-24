@@ -30,8 +30,21 @@ public class GeShou {
             int score = scanner.nextInt();
             scoreArray[i]=score;
         }
+
+        //对用户输入的数据进行排序，使用冒泡算法，虽然性能低，但是考的基本点很多
+        //外循环表示把从第一个数开始，所有的数都要跟后面的数比较一遍
+        for (int i=0;i<count-1;i++){
+            //内循环  把每个数跟右边的比较，如果是后面的大，就继续交换
+            for (int j=0;j<count-i-1;j++){
+                // 把每个数跟右边的数比较，如果是后面大，就继续交换
+                if (scoreArray[j] > scoreArray[j + 1]) {
+                    int temp = scoreArray[j];
+                    scoreArray[j]=scoreArray[j+1];
+                    scoreArray[j + 1] = temp;
+                }
+            }
+        }
         //4.测试下输入分数，打印数组（注意：数组不能直接打印，要遍历或者使用工具类Arrays）
         System.out.println(Arrays.toString(scoreArray));
-        //
     }
 }
