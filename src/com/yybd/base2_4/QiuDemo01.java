@@ -1,5 +1,4 @@
 package com.yybd.base2_4;
-
 import java.util.Scanner;
 
 /**
@@ -41,6 +40,5 @@ public class QiuDemo01 {
             //打印保留小数,printf是格式化输出
             System.out.printf("球的体积:%.3f",qiuTiJiArray[i]);
         }
-
     }
 }

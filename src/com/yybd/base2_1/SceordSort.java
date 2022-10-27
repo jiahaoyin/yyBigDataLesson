@@ -34,10 +34,7 @@ public class SceordSort {
             scoreArray[i]=score;
 //            System.out.println("score = " + score);
         }
-
-        //4,对用户输入的数据继续排序,使用冒泡算法,虽然性能较低,但是考的基本功比较多
-        // 图示:https://blog.csdn.net/weixin_44895385/article/details/121709651
-
+        //4.对用户输入的数据继续排序,使用冒泡算法,虽然性能较低,但是考的基本功比较多
         //外循环表示把从第一个数开始,所有的数都要跟后面比较一遍
         for (int i = 0; i < count-1; i++) {
             //内循环 把每个数跟右边的数比较,如果是后面大,就继续交换
@@ -50,7 +47,7 @@ public class SceordSort {
                 }
             }
         }
-        //4 . 测试下输入分数,打印数组(注意:数组不能直接打印,要遍历或者使用工具类Arrays.toString方法)
+        //5. 打印输出第二小的数
         System.out.println("第二小的数是 " + scoreArray[1]);
     }
 }

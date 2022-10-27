@@ -1,7 +1,6 @@
 package com.yybd.base2_1;
-import java.util.Scanner;
+
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -33,10 +32,10 @@ public class SortDemo {
 //            System.out.println("score = " + score);
         }
 
-        //5 .自己写的算法性能较差,并且有bug,一般排序其实使用是的JDK自带的Arrays.sort方法
+        //4 .自己写的算法性能较差,并且有bug,一般排序其实使用是的JDK自带的Arrays.sort方法
         Arrays.sort(scoreArray);
 
-        //4 . 测试下输入分数,打印数组(注意:数组不能直接打印,要遍历或者使用工具类Arrays.toString方法)
+        //5 . 测试下输入分数,打印数组(注意:数组不能直接打印,要遍历或者使用工具类Arrays.toString方法)
         System.out.println("排序后的值是:"+Arrays.toString(scoreArray));
     }
 }

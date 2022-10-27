@@ -1,5 +1,4 @@
 package com.yybd.base2_9;
-
 /**
  * 任务一：实现汽车与摩托问题的关键算法(25  分)
  * 在一个停车场内，汽车、摩托车共停了 48  辆，
@@ -18,7 +17,6 @@ public class QiCheCount {
                     System.out.println("摩托车的数量是:"+j);
                 }
             }
-
         }
     }
 }

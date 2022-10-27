@@ -1,5 +1,4 @@
 package com.yybd.base2_10;
-
 import java.util.Scanner;
 
 /**
@@ -16,7 +15,6 @@ public class XiBao1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入天数:");
         int days = scanner.nextInt();
-
         if (days >= 20) {
             System.out.println("必须输入0-20之间的数量");
             return;

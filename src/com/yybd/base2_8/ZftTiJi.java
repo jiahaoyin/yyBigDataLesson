@@ -1,5 +1,4 @@
 package com.yybd.base2_8;
-
 import java.util.Scanner;
 
 /**

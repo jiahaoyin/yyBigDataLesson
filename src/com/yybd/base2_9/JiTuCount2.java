@@ -1,7 +1,5 @@
 package com.yybd.base2_9;
-
 import java.util.Scanner;
-
 /**
  * 任务二：实现鸡兔同笼问题的关键算法(25  分)
  * 已知鸡和兔的总数量为n,总腿数为m。输入 n  和 m,依次输出鸡 和兔的数目，

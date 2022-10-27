@@ -1,5 +1,4 @@
 package com.yybd.base2_2;
-
 import java.util.Scanner;
 
 /**
@@ -32,6 +31,5 @@ public class EnglishDemo2 {
         } else {
             System.out.println("No");
         }
-
     }
 }

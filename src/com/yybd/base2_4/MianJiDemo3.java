@@ -1,5 +1,4 @@
 package com.yybd.base2_4;
-
 import java.util.Scanner;
 
 /**
@@ -15,13 +14,10 @@ public class MianJiDemo3 {
         String[] array = s.split(" ");
 //      正方形面积
         double zfx = Double.parseDouble(array[0]) * Double.parseDouble(array[0]);
-
 //        长方形面积
         double cfx= Double.parseDouble(array[1]) * Double.parseDouble(array[2]);
-
 //        圆的面积
         double yuan = Math.PI * Math.pow(Double.parseDouble(array[3]), 2);
-
         //比较三个面积,假设三个都不相等
         if (zfx > cfx && zfx > yuan) {
             System.out.println("正方形面积最大");

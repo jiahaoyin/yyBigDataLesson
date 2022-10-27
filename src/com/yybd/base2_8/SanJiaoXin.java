@@ -1,7 +1,5 @@
 package com.yybd.base2_8;
-
 import java.util.Scanner;
-
 public class SanJiaoXin {
     public static void main(String[] args) {
         //1 接收用户输入的边长
@@ -22,8 +20,5 @@ public class SanJiaoXin {
 
         double bianChang=a+b+c;
         System.out.printf("三角形边长是: %.2f",bianChang);
-
-
-
     }
 }

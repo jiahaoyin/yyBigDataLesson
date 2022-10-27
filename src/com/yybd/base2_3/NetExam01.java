@@ -1,7 +1,5 @@
 package com.yybd.base2_3;
-
 import java.util.Scanner;
-
 /**
  * 任务一：实现统计元音关键算法(25  分)
  * 输入一个字符串统计每个元音字母(aeiou) 在字符串中出现的次数。对 于结果输出 5  行，格式如下：
@@ -41,6 +39,5 @@ public class NetExam01 {
         for (int i = 0; i <yuanArray.length ; i++) {
             System.out.println(yuanArray[i]+":"+yuanCount[i]);
         }
-
     }
 }

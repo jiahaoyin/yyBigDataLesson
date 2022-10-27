@@ -13,21 +13,17 @@ public class ChangDuDemo2 {
     public static void main(String[] args) {
         //1.接收两个坐标,四个值
         Scanner scanner = new Scanner(System.in);
-
         //如果要获取一行的完整的值,其中包含了空格,就不能使用next,而要使用nextLine
         String inputString = scanner.nextLine();
         System.out.println("next = " + inputString);
-
 //     2. 把接收到的字符串通过空格切分成数组,然后转化成对应的double类型的坐标
         String[] s = inputString.split(" ");
         double x1= Double.parseDouble(s[0]);
         double y1= Double.parseDouble(s[1]);
         double x2= Double.parseDouble(s[2]);
         double y2= Double.parseDouble(s[3]);
-
 //      3.计算长度,原理上勾股定理,斜边的值等于其余两边的平方之和的平方根
         double result = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
         System.out.printf("坐标的长度是 %.2f",result);
-
     }
 }

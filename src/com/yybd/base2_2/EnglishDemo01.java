@@ -1,5 +1,4 @@
 package com.yybd.base2_2;
-
 public class EnglishDemo01 {
         public static void main(String[] args) {
             //定义字符串数组,采用声明式定义,直接内容,不需要长度
@@ -7,12 +6,10 @@ public class EnglishDemo01 {
             String[] b = {"Jack", "Tom", "Lee", "John", "Alisa"};
             //采用new方法声明数组
             String[] c = new String[a.length];
-
             //2. 遍历数组a和b,给c赋值
             for (int i = 0; i < a.length; i++) {
                 c[i]=a[i]+b[i];
             }
-
             //打印c数组
             //如果采用Arrays.toString打印,没有题目要求的大括号,双引号,所以不能用下面打印
 //        System.out.println(Arrays.toString(c));
