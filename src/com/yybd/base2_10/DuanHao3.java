@@ -24,5 +24,13 @@ public class DuanHao3 {
 //        得到短号:
         String duanHao ="6"+substring;
         System.out.println("手机短号是:"+duanHao);
+        //不用substring,使用循环来操作
+        int [] testArry={1,2,2};
+        System.out.println("testArry.length = " + testArry.length);
+        String result="6";
+        for (int i = phoneNumber.length()-5; i <phoneNumber.length() ; i++) {
+            result=result+phoneNumber.charAt(i);
+        }
+        System.out.println(" 使用了循环后的短号是= " + result);
     }
 }
